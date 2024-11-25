@@ -52,11 +52,7 @@ public class JustController {
         return consumeApi.updateUserById(id,userModelRequest);
     }
 
-    @PatchMapping("/PatchUser/{id}")
-    public UpdateUserModelResponse patchUserById(@RequestParam("id") int id, @RequestBody CreateUserModelRequest userModelRequest)
-    {
-        return consumeApi.patchUserbyId(id,userModelRequest);
-    }
+
 
 
 }
